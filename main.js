@@ -12,7 +12,8 @@ const client = new Client({
 
 var emoteServers = [
     '1112116445787214014',
-    '1029015002214051910'
+    '1029015002214051910',
+    '1082973848468734013',
 ];
 
 
@@ -56,7 +57,7 @@ function parseString(finalString)
 }
 
 client.on("messageCreate", (msg) => {
-    if (msg.member && !msg.member.user.bot && msg.member.user.id == "212552746879025154"){
+    if (msg.member && !msg.member.user.bot){
         parseString(msg.content).then((str) => {
             if (msg.content != str)
             {
