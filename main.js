@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const client = new Client({
     intents: [
-		GatewayIntentBits.DirectMessages,
+        GatewayIntentBits.DirectMessages,
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent
